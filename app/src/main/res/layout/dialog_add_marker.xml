@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <!-- Título principal -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro Restaurante"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+    <!-- Etiqueta y EditText para Nombre del Restaurante -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Restaurante"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    <EditText
+            android:id="@+id/edit_text_restaurant_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el nombre del restaurante"/>
+
+    <!-- Etiqueta y EditText para Nombre del Plato -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Plato"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    <EditText
+            android:id="@+id/edit_text_dish_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el nombre del plato"/>
+
+    <!-- Etiqueta y EditText para Descripción del Plato -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción del Plato"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    <EditText
+            android:id="@+id/edit_text_dish_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la descripción del plato"/>
+
+    <!-- Etiqueta y ImageView para Foto del Restaurante -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Foto del Restaurante"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    <ImageView
+            android:id="@+id/image_view_dish"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="Foto del Restaurante"
+            android:background="@android:color/darker_gray"
+            android:scaleType="centerCrop"
+            android:onClick="onImageClick"
+            android:layout_marginTop="16dp"/>
+
+</LinearLayout>
